@@ -1,0 +1,6 @@
+.header {
+  @apply flex justify-between items-end mb-[40px] max-md:items-center;
+  .logo {
+    @apply text-[40px] font-bold leading-none uppercase tracking-[7px] text-white max-[425px]:text-[20px];
+  }
+}

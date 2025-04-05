@@ -1,0 +1,16 @@
+@import "./reset.css";
+@import "./font.css";
+@import "./variables.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--body-bg);
+  background-image: var(--body-bg-img);
+  background-repeat: no-repeat;
+  background-size: 100vw var(--bg-width);
+  transition: 0.5s;
+}

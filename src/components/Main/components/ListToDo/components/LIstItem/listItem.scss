@@ -1,0 +1,41 @@
+.toDoBox {
+  @apply flex items-start gap-6 px-6 py-5 border-b-[1px] border-[--line-color];
+  &:hover {
+    .delete {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 425px) {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+}
+
+.textToDo {
+  @apply text-lg text-[--text-color] transition-[0.5s] mr-auto max-[425px]:text-xs;
+}
+
+.isCheck {
+  @apply text-[--text-color-opacity] line-through;
+}
+
+.delete {
+  @apply w-[18px] h-[18px] shrink-0 relative opacity-0 duration-300 cursor-pointer my-auto;
+  @media (max-width: 425px) {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.chaka {
+  @apply h-[1px] w-6 bg-[--xIcon-color] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] origin-center;
+  @media (max-width: 425px) {
+    width: 16px;
+  }
+}
+
+@media (hover: none) {
+  .delete {
+    opacity: 1;
+  }
+}

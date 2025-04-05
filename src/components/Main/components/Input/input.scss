@@ -1,0 +1,7 @@
+.inputBox {
+  @apply w-full input bg-[--bg-box] px-6 py-5 rounded-[5px] flex gap-6 shadow-[0px_35px_50px_-15px_var(--box-shadow)] mb-[24px] max-[425px]:px-5 max-[425px]:py-[14px] max-[425px]:gap-3 max-[425px]:mb-4;
+}
+.input {
+  @apply w-full text-lg text-[--text-color] placeholder:text-[--text-color-placeholder] max-[425px]:text-xs;
+  caret-color: #3a7cfd;
+}

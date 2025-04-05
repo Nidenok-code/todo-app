@@ -1,0 +1,38 @@
+:root {
+  --text-color: #494c6b;
+  --text-color-hover: #494c6b;
+  --text-color-placeholder: #9495a5;
+  --text-color-opacity: #d1d2da;
+  --text-color-sitings: #9495a5;
+  --xIcon-color: #494c6b;
+  --line-color: #e3e4f1;
+  --bg-box: #fff;
+  --body-bg: #fafafa;
+  --body-bg-img: url(../assets/images/bg-light.jpg);
+  --box-shadow: #c2c3d680;
+  --bg-width: 37.5vh;
+}
+
+.dark {
+  --text-color: #c8cbe7;
+  --text-color-hover: #e3e4f1;
+  --text-color-placeholder: #767992;
+  --text-color-opacity: #4d5067;
+  --text-color-sitings: #5b5e7e;
+  --xIcon-color: #5b5e7e;
+  --line-color: #393a4b;
+  --bg-box: #25273d;
+  --body-bg: #171823;
+  --body-bg-img: url(../assets/images/bg-dark.jpg);
+  --box-shadow: #00000080;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --body-bg-img: url(../assets/images/bg-light-mobile.jpg);
+    --bg-width: calc((200 / 730) * 100vh);
+  }
+  .dark {
+    --body-bg-img: url(../assets/images/bg-dark-mobile.jpg);
+  }
+}
